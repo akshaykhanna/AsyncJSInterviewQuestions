@@ -1,0 +1,22 @@
+{
+  "name": "jsinterviewquestions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config ./jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaykhanna/JSInterviewQuestions.git"
+  },
+  "author": "Akshay Khanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshaykhanna/JSInterviewQuestions/issues"
+  },
+  "homepage": "https://github.com/akshaykhanna/JSInterviewQuestions#readme",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  }
+}

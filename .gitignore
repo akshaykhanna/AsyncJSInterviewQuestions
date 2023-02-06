@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Configuration files
+.env
+
+# Build artifacts
+build/
+dist/
+
+# IDE configuration files
+.idea/
+*.iml
+settings.json
+
+# Test files
+__tests__/
+*.spec.*
+
+# Coverage report
+coverage/
+
+# npm-related files
+package-lock.json
+npm-debug.json
+yarn.lock
