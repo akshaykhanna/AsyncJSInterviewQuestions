@@ -3,6 +3,13 @@ This repository contains solutions to common asynchronous JavaScript interview q
 
 # Interview QA
 - [Promise.all](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/promise-all.test.js)
+- [Promise.allsettled](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/promise-allsettled.test.js)
+- [Promise.any](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/promise-any.test.js)
+- [Promise.race](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/promise-race.test.js)
+- [Promisify](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/promisify.test.js)
+- [Throttle](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/throttle.test.js)
+- [Debounce](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/debounce.test.js)
+- [FetchWithAutoRetry](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/fetchWithAutoRetry.test.js)
 
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
