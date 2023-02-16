@@ -15,7 +15,7 @@ This repository contains solutions to common asynchronous JavaScript interview q
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Prerequisites
-- Node.js v12 or above
+- Node.js v14 or above
 - npm v6 or above
 ## Installing
 To install the dependencies, run the following command in the project directory:
