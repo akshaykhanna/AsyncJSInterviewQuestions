@@ -1,8 +1,10 @@
 function add(a, b) {
-    return a + b;
-  }
-  
-  test('adds 1 + 2 to equal 3', () => {
-    expect(add(1, 2)).toBe(3);
+  return a + b;
+}
+
+describe("Sample unit test", () => {
+  beforeEach(() => {});
+  it("Sample first test", () => {
+    expect(5 + 3).toEqual(add(5, 3));
   });
-  
+});
