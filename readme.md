@@ -11,6 +11,7 @@ This repository contains solutions to common asynchronous JavaScript interview q
 - [Debounce](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/debounce.test.js)
 - [FetchWithAutoRetry](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/fetchWithAutoRetry.test.js)
 - [EventEmitter](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/event-emmiter.test.js)
+- [Async Helper: sequence()](https://github.com/akshaykhanna/AsyncJSInterviewQuestions/blob/main/tests/async-helper-sequecne.test.js)
 
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
