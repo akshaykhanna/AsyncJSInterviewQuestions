@@ -10,6 +10,8 @@ function myPromiseRace(promises) {
   });
 }
 
+jest.useRealTimers();
+
 describe("myPromiseRace unit test", () => {
   it("Resolve first resolved promise", async () => {
     // Arrange

@@ -6,8 +6,6 @@ function parallel(promisesFn, fn) {
         resolve(results.map((result) => (fn ? fn(result) : result)));
       })
       .catch((err) => {
-        console.log("ak err:", err);
-
         reject(err);
       });
   });

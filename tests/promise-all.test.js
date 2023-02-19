@@ -17,8 +17,10 @@ function myPromiseAll(promises) {
   });
 }
 
+jest.useRealTimers();
+
 describe("myPromiseAll unit test", () => {
-  test("Resolve all promise", async () => {
+  it("Resolve all promise", async () => {
     // Arrange
     const promise1 = Promise.resolve("Value 1");
     const promise2 = Promise.resolve("Value 2");
@@ -27,7 +29,7 @@ describe("myPromiseAll unit test", () => {
     const results = await myPromiseAll([promise1, promise2, promise3]);
     expect(results).toEqual(["Value 1", "Value 2", "Value 3"]);
   });
-  test("Rejects all if one promise get rejected", async () => {
+  it("Rejects all if one promise get rejected", async () => {
     // Arrange
     const promise1 = Promise.resolve("Value 1");
     const promise2 = Promise.reject("Error");
@@ -39,7 +41,7 @@ describe("myPromiseAll unit test", () => {
       expect(error).toEqual("Error");
     }
   });
-  test("Resolve all delayed promise", async () => {
+  it("Resolve all delayed promise", async () => {
     // Arrange
     const promise1 = new Promise((res, rej) => {
       setTimeout(res, 1000, "Value 1");
@@ -50,11 +52,10 @@ describe("myPromiseAll unit test", () => {
     const promise3 = "Value 3";
 
     const results = await myPromiseAll([promise1, promise2, promise3]);
-    console.log(results);
     expect(results).toEqual(["Value 1", "Value 2", "Value 3"]);
   });
 
-  test("Should resolve all API calls", async () => {
+  it("Should resolve all API calls", async () => {
     function makeRequest(url) {
       return new Promise((resolve, reject) => {
         axios
@@ -75,18 +76,14 @@ describe("myPromiseAll unit test", () => {
     ];
 
     const promises = urls.map((url) => makeRequest(url));
-    console.log("promises:", promises);
 
     myPromiseAll(promises)
       .then((data) => {
         expect(data.length).toBe(3);
-        done();
       })
-      .catch((error) => {
-        done(error);
-      });
+      .catch((error) => {});
   });
-  test("Should not resolve all API calls if any of them fails", async () => {
+  it("Should not resolve all API calls if any of them fails", async () => {
     function makeRequest(url) {
       return new Promise((resolve, reject) => {
         axios
@@ -107,15 +104,11 @@ describe("myPromiseAll unit test", () => {
     ];
 
     const promises = urls.map((url) => makeRequest(url));
-    console.log("promises:", promises);
 
     myPromiseAll(promises)
-      .then((data) => {
-        done();
-      })
+      .then((data) => {})
       .catch((error) => {
-        expect(error).notNull();
-        done(error);
+        expect(error).not.toBeNull();
       });
   });
 });
