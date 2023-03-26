@@ -36,3 +36,8 @@ If you have any suggestions or improvements, feel free to open a pull request.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Udemy Course
+[Master Asynchronous JavaScript for Interview Success](https://www.udemy.com/course/master-asynchronous-javascript-for-interview-success/?referralCode=6CA7E06E245D7494840D)
+![Course_image_7](https://user-images.githubusercontent.com/12964174/227786546-666e3240-a354-4837-ac1d-e3cd81041c7e.png)
+
